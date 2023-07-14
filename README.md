@@ -71,23 +71,23 @@
    
     （2）计算指标变异性。在 CRITIC 赋权法中使用标准差来表示各指标的内取值的差异波动情况，标准差越大表示该指标的数值差异越大，越能放映出更多的信息，该指标本身的评价强度也就越强，应该给该指标分配更多的权重，计算公式如下：
    
-    <img src="https://gitee.com/xhyuaner/typora-image/raw/master/typora-images/image-20230222234142880.png" alt="image-20230222234142880" style="zoom: 67%;" />
+    <div align=center><img src="https://github.com/OS-HUBU/OpenCommunityDegree/blob/main/Image/BianYi.png"  style="zoom: 67%;" div align=center></div>
    
-    其中 $Sj$ 表示第 j 个指标的标准差。
+    其中 $Sj$ 表示第 $j$ 个指标的标准差。
    
     （3）计算指标冲突性。 CRITIC 赋权法中使用相关系数来表示指标间的相关性，与其他指标的相关性越强，则该指标就与其他指标的冲突性越小，反映出相同的信息越多，所能体现的评价内容就越有重复之处，一定程度上也就削弱了该指标的评价强度，应该减少对该指标分配的权重，计算公式如下：
    
-    <img src="https://gitee.com/xhyuaner/typora-image/raw/master/typora-images/image-20230222234430307.png" alt="image-20230222234430307" style="zoom: 50%;" />
+    <div align=center><img src="https://github.com/OS-HUBU/OpenCommunityDegree/blob/main/Image/ChongTu.png" align=center style="zoom: 50%;"></div>
    
     其中 $r_ij$ 表示评价指标 $i$ 和 $j$ 之间的相关系数。
    
     （4）计算信息量。CRITIC 赋权法中 $C_j$ 越大，第 $j$ 个评价指标在整个评价指标体系中的作用越大，就应该给其分配更多的权重，计算公式如下：
    
-    <img src="https://gitee.com/xhyuaner/typora-image/raw/master/typora-images/image-20230222234549633.png" alt="image-20230222234549633" style="zoom: 67%;" />
+    <div align=center><img src="https://github.com/OS-HUBU/OpenCommunityDegree/blob/main/Image/XinXi.png" style="zoom: 67%;"></div>
    
     （5）计算 CRITIC 权重。第 $j$ 个指标的客观权重 $W_j$ 计算公式如下：
    
-    <img src="https://gitee.com/xhyuaner/typora-image/raw/master/typora-images/image-20230222234650694.png" alt="image-20230222234650694" style="zoom: 67%;" />
+    <div align=center><img src="https://github.com/OS-HUBU/OpenCommunityDegree/blob/main/Image/QuanZhong.png" style="zoom: 67%;"></div>
 
 5. **举例说明**
 
@@ -103,7 +103,7 @@
 
 为了验证项目社区化程度评估指标的有效性，我们挑选了`GitHub`上十个知名的项目，利用社区化程度评估模型的方法，对这十个项目进行了社区化程度的评估计算。
 
-<img src="https://gitee.com/xhyuaner/typora-image/raw/master/typora-images/image-20230518102739162.png" alt="image-20230518102739162" style="zoom: 80%;" />
+<div align=center><img src="https://github.com/OS-HUBU/OpenCommunityDegree/blob/main/Image/Example.png" style="zoom: 80%;"></div>
 
 例如在上表中，尽管`tensorflow`项目比`kubernetes`项目的志愿者人数多出了近 2000 人，但是`kubernetes`项目的志愿者所完成的pr数量却远高于`tensorflow`项目，这也就说明`kubernetes`项目中的志愿者是更加活跃的。最终通过模型计算，`tensorflow`项目的社区化程度得分为：2144.94 分，而`kubernetes`项目的社区化程度得分为：2168.17 分，确实略高于`tensorflow`项目的社区化程度。
 

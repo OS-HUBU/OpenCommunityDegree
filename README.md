@@ -79,7 +79,7 @@
    
     <div align=center><img src="https://github.com/OS-HUBU/OpenCommunityDegree/blob/main/Image/ChongTu.png" align=center style="zoom: 50%;"></div>
    
-    其中 $r_ij$ 表示评价指标 $i$ 和 $j$ 之间的相关系数。
+    其中 $r_{ij}$ 表示评价指标 $i$ 和 $j$ 之间的相关系数。
    
     （4）计算信息量。CRITIC 赋权法中 $C_j$ 越大，第 $j$ 个评价指标在整个评价指标体系中的作用越大，就应该给其分配更多的权重，计算公式如下：
    
